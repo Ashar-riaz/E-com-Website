@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Nav from '../NavBar/Nav';
 import './home.css';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import pic1 from './../../picture/pic1.avif';
 import pic2 from './../../picture/pic2.avif';
 import pic3 from './../../picture/Fashion.png';
@@ -13,6 +14,7 @@ import fashion2 from './../../picture/fashion2.png';
 import fashion1 from './../../picture/fashion1.png';
 import mens from './../../picture/mens.png';
 import women from './../../picture/Women.png';
+import Men from '../../page/Men';
 
 
 const images = [pic1, pic2, pic3, pic4, pic5];
@@ -65,11 +67,7 @@ export default function Home() {
         ))}
         <div className="dot-container">
           {images.map((_, index) => (
-            <span
-              key={index}
-              className={`dot ${index === currentImageIndex ? 'active' : ''}`}
-              onClick={() => handleDotClick(index)}
-            ></span>
+            <span key={index} className={`dot ${index === currentImageIndex ? 'active' : ''}`} onClick={() => handleDotClick(index)}></span>
           ))}
         </div>
         <button className="arrow right" onClick={handleRightArrowClick}>&#8250;</button>
@@ -92,9 +90,14 @@ export default function Home() {
         <div className=" " style={{ width: '100%', height: '250px', backgroundColor: 'red' }}></div>
       </div>
       <div className="d-flex main-box container">
-        <div className="d-flex">
-          <img src={mens} alt="" style={{ width: '350px' }} />
-        </div>
+          <div className="d-flex">
+            <Link to="/men" >
+              
+              <img src={mens} alt="" style={{ width: '350px' }} />
+            </Link>
+          </div>
+
+          
         <div className="d-flex flex-column">
           <div className="d-flex mb-3">
             <img src={fashion1} alt="" style={{ width: '550px', height: '240px' }} />
