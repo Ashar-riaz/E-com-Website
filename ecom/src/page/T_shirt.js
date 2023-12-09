@@ -1,5 +1,5 @@
 import React from 'react';
-import t_shirt from "./../picture/men_t-shirt.jpg";
+import t_shirt from "./../picture/t_shirt_banner.png";
 import pic1 from "./../picture/t-shirt/1.png";
 import Nav from '../components/NavBar/Nav';
 import './t_shirt.css';

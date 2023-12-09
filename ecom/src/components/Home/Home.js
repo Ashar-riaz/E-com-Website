@@ -14,7 +14,11 @@ import fashion2 from './../../picture/fashion2.png';
 import fashion1 from './../../picture/fashion1.png';
 import mens from './../../picture/mens.png';
 import women from './../../picture/Women.png';
-import Men from '../../page/Men';
+import mens_unstitch from './../../picture/mens-unstitch.png';
+import women_unstitch from './../../picture/women-unstitch.png';
+import shalwar_kameez from './../../picture/shalwar_kameez.png';
+import t_shirt from './../../picture/t_shirt.png';
+import women_shalwarkameez from './../../picture/women_shalwarkameez.png';
 
 
 const images = [pic1, pic2, pic3, pic4, pic5];
@@ -42,6 +46,7 @@ export default function Home() {
     setCurrentImageIndex(index);
   };
 
+  
   return (
     <>
       <Nav />
@@ -111,6 +116,44 @@ export default function Home() {
         <div className="d-flex">
           <img src={women} alt="" style={{ width: '350px' }} />
         </div>
+
+      </div>
+      <div className="container mt-5">
+            <span className='d-flex justify-content-center'>CHOSE BY CATEGORY </span>
+            <div className="d-flex flex-row mt-3">
+              <div className="d-flex flex-column">
+              <img src={mens_unstitch} alt="" style={{ width: '240px', height: '280px' }} />
+              <span className='d-flex justify-content-center'>MEN UNSTITCH</span>
+              </div>
+              <div className="d-flex flex-column ">
+              <img src={women_unstitch} alt="" style={{ width: '240px', height: '280px',marginLeft:'40px' }} />
+              <span className='d-flex justify-content-center'>WOMEN UNSTITCH</span>
+              </div>
+              <div className="d-flex flex-column ">
+              <img src={shalwar_kameez} alt="" style={{ width: '240px', height: '280px',marginLeft:'40px' }} />
+              <span className='d-flex justify-content-center flex-column align-items-center'>SHALWAR KAMEEZ</span>
+              <span className='d-flex justify-content-center'>FOR MEN</span>
+              </div>
+              <div className="d-flex flex-column ">
+              <Link to="/t_shirt" >
+              <img src={t_shirt} alt="" style={{ width: '240px', height: '280px',marginLeft:'40px' }} />
+            </Link>
+              <span className='d-flex justify-content-center'>T-SHIRT FOR MEN</span>
+              </div>
+              <div className="d-flex flex-column ">
+              <img src={women_shalwarkameez} alt="" style={{ width: '240px', height: '280px',marginLeft:'40px' }} />
+              <span className='d-flex justify-content-center flex-column align-items-center'>SHALWAR KAMEEZ</span>
+              <span className='d-flex justify-content-center'>FOR WOMEN</span>
+              </div>
+              
+            
+
+
+
+
+            </div>
+            <button onClick={handleRightArrowClick}>&gt;</button>
+            
 
       </div>
     </>
