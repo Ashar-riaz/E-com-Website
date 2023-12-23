@@ -91,6 +91,7 @@ export default function Home() {
       <div className="d-flex justify-content-center align-items-center mb-3 container">
         TOP PRODUCT
       </div>
+      
       <div className="container mb-3">
         <div className=" " style={{ width: '100%', height: '250px', backgroundColor: 'red' }}></div>
       </div>
@@ -101,8 +102,6 @@ export default function Home() {
               <img src={mens} alt="" style={{ width: '350px' }} />
             </Link>
           </div>
-
-          
         <div className="d-flex flex-column">
           <div className="d-flex mb-3">
             <img src={fashion1} alt="" style={{ width: '550px', height: '240px' }} />
@@ -118,7 +117,7 @@ export default function Home() {
         </div>
 
       </div>
-      <div className="container mt-5">
+      {/* <div className="container mt-5">
             <span className='d-flex justify-content-center'>CHOSE BY CATEGORY </span>
             <div className="d-flex flex-row mt-3">
               <div className="d-flex flex-column">
@@ -155,7 +154,7 @@ export default function Home() {
             <button onClick={handleRightArrowClick}>&gt;</button>
             
 
-      </div>
+      </div> */}
     </>
   );
 }
