@@ -15,10 +15,10 @@ export default function Nav() {
                     <div className="d-flex justify-content-center align-items-center">
                         <ul className="navbar-nav">
                             <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="#">Home</a>
+                                <a className="nav-link active" aria-current="page" href="/">Home</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Catalog</a>
+                                <a className="nav-link" href="/catalog">Catalog</a>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link" href="#">Contact</a>

@@ -6,8 +6,8 @@ import Men from './page/Men';
 import T_shirt from './page/T_shirt';
 import AddProduct from './Admin/AddProduct';
 import Dashboard from './Admin/Dashboard';
-import Productadd from './Admin/Productadd';
-import Show from './Admin/Show';
+import EditProduct from './Admin/Edit';
+import Catalog from './components/Catalog/Catalog';
 
 const App = () => {
   return (
@@ -16,10 +16,10 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/men" element={<Men/>} />
         <Route path="/t_shirt" element={<T_shirt/>} />
-        <Route path="/admin" element={<AddProduct/>} />
+        <Route path="/admin/addproduct" element={<AddProduct/>} />
         <Route path="/admin/dashboard" element={<Dashboard/>} />
-        <Route path="/admin/product" element={<Productadd/>} />
-        <Route path="/admin/show" element={<Show/>} />
+        <Route path="/admin/dashboard/edit/:id" element={<EditProduct/>} />
+        <Route path="/catalog" element={<Catalog/>} />
         
       </Routes>
     </Router>
